@@ -8,12 +8,22 @@
     "jsx": "react-native",
     "lib": ["es2017", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
-    "outDir": "./lib",
     "strict": true,
     "target": "esnext",
     "module": "esnext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "./lib",
+    "rootDir": "./src"
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "example",
+    "**/__tests__/*",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }

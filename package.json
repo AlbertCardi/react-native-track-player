@@ -7,7 +7,7 @@
 	"react-native": "src/index",
 	"source": "src/index",
 	"scripts": {
-    "build": "rimraf lib && echo \"BUILD SCRIPT: Using TSC version:\" && node_modules/.bin/tsc --version && node_modules/.bin/tsc",
+		"build": "rimraf lib && tsc",
 		"dev": "tsc --watch",
 		"lint": "eslint src",
 		"format": "prettier --write src",
